@@ -18,6 +18,7 @@ class TestWidget extends StatelessWidget {
           body: IntlPhoneField(
             initialValue: phoneNumber,
             initialCountryCode: countryCode,
+            bottomSheetDialogSearchHintText: 'Search Country',
           ),
         ));
   }

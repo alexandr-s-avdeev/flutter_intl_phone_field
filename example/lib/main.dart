@@ -1,90 +1,67 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_intl_phone_field/flutter_intl_phone_field.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MaterialApp(home: HomeScreen()));
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+/// {@template main}
+/// HomeScreen widget.
+/// {@endtemplate}
+class HomeScreen extends StatefulWidget {
+  /// {@macro main}
+  const HomeScreen({
+    super.key, // ignore: unused_element
+  });
 
   @override
-  State<MyApp> createState() => _MyAppState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _MyAppState extends State<MyApp> {
-  final GlobalKey<FormState> _formKey = GlobalKey();
-
-  FocusNode focusNode = FocusNode();
-
+/// State for widget HomeScreen.
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Phone Field Example'),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Form(
-            key: _formKey,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                const SizedBox(height: 30),
-                const TextField(
-                  decoration: InputDecoration(
-                    labelText: 'Name',
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide(),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                const TextField(
-                  decoration: InputDecoration(
-                    labelText: 'Email',
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide(),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                IntlPhoneField(
-                  initialValue: "7012345678",
-                  focusNode: focusNode,
-                  decoration: const InputDecoration(
-                    labelText: 'Phone Number',
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide(),
-                    ),
-                  ),
-                  languageCode: "en",
-                  onChanged: (phone) {
-                    print(phone.completeNumber);
-                  },
-                  onCountryChanged: (country) {
-                    print('Country changed to: ${country.name}');
-                  },
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                MaterialButton(
-                  color: Theme.of(context).primaryColor,
-                  textColor: Colors.white,
-                  onPressed: () {
-                    _formKey.currentState?.validate();
-                  },
-                  child: const Text('Submit'),
-                ),
-              ],
+    return Scaffold(
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: IntlPhoneField(
+            showDropdownIcon: false,
+
+            buildCounter:
+                (
+                  context, {
+                  required currentLength,
+                  required isFocused,
+                  maxLength,
+                }) => null,
+
+            bottomSheetDialogSearchHintText: 'Search Country',
+            cursorColor: Colors.black,
+            cursorHeight: 15,
+            style: TextStyle(
+              fontSize: 15,
+              color: Colors.black,
+              fontWeight: FontWeight.w400,
             ),
+            decoration: InputDecoration(
+              errorBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Color(0xffC4C4C4)),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Color(0xffC4C4C4)),
+              ),
+              contentPadding: EdgeInsets.zero,
+              constraints: BoxConstraints(maxHeight: 40),
+
+              border: OutlineInputBorder(
+                borderSide: BorderSide(color: Color(0xffC4C4C4)),
+              ),
+            ),
+            languageCode: 'en',
+            initialCountryCode: 'US',
+            onChanged: (phone) {
+              print(phone.completeNumber);
+            },
           ),
         ),
       ),

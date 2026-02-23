@@ -287,12 +287,15 @@ class IntlPhoneField extends StatefulWidget {
   /// Called when the user submits data.
   final void Function()? onEditingComplete;
 
+  final String bottomSheetDialogSearchHintText;
+
   const IntlPhoneField({
     Key? key,
     this.formFieldKey,
     this.initialCountryCode,
     this.languageCode = 'en',
     this.autofillHints,
+    required this.bottomSheetDialogSearchHintText,
     this.obscureText = false,
     this.textAlign = TextAlign.left,
     this.textAlignVertical,
@@ -416,13 +419,22 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
     );
   }
 
-  Future<void> _changeCountryDialog() async {
+  Future<void> _changeCountryBottomSheet() async {
     filteredCountries = _countryList;
-    await showDialog(
+    await showModalBottomSheet(
+      isScrollControlled: true,
       context: context,
+      backgroundColor: Colors.white,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadiusGeometry.only(
+          topLeft: Radius.circular(8),
+          topRight: Radius.circular(8),
+        ),
+      ),
       useRootNavigator: false,
       builder: (context) => StatefulBuilder(
         builder: (ctx, setState) => CountryPickerDialog(
+          hintText: widget.bottomSheetDialogSearchHintText,
           languageCode: widget.languageCode,
           style: widget.pickerDialogStyle,
           filteredCountries: filteredCountries,
@@ -447,6 +459,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
       builder: (context) => StatefulBuilder(
         builder: (ctx, setState) => CountryPickerDialog(
           dialogPadding: EdgeInsets.zero,
+          hintText: widget.bottomSheetDialogSearchHintText,
           languageCode: widget.languageCode,
           style: widget.pickerDialogStyle,
           filteredCountries: filteredCountries,
@@ -583,7 +596,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
           borderRadius: widget.dropdownDecoration.borderRadius as BorderRadius?,
           onTap: widget.enabled
               ? widget.dialogType == DialogType.showDialog
-                  ? _changeCountryDialog
+                  ? _changeCountryBottomSheet
                   : _changeCountryModalBottomSheet
               : null,
           child: Padding(
