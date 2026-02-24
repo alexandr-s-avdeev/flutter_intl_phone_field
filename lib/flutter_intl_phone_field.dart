@@ -510,7 +510,19 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
       cursorWidth: widget.cursorWidth,
       showCursor: widget.showCursor,
       magnifierConfiguration: widget.magnifierConfiguration,
-      decoration: widget.decoration.copyWith(
+      decoration: const InputDecoration(
+        errorBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Color(0xffC4C4C4)),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Color(0xffC4C4C4)),
+        ),
+        contentPadding: EdgeInsets.zero,
+        constraints: BoxConstraints(maxHeight: 50),
+        border: OutlineInputBorder(
+          borderSide: BorderSide(color: Color(0xffC4C4C4)),
+        ),
+      ).copyWith(
         prefixIcon: widget.prefixIcon ?? _buildFlagsButton(),
         counterText: !widget.enabled ? '' : null,
       ),
