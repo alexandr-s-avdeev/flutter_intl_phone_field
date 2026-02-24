@@ -110,18 +110,20 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
               cursorColor: const Color(0xff2E2E2E),
               cursorHeight: 20,
               decoration: InputDecoration(
-                  contentPadding: EdgeInsets.only(top: 7, bottom: 9, left: 12),
+                  contentPadding:
+                      const EdgeInsets.only(top: 7, bottom: 9, left: 12),
                   focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
-                      borderSide: BorderSide(color: Color(0xffC4C4C4))),
+                      borderSide: const BorderSide(color: Color(0xffC4C4C4))),
                   disabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(color: Color(0xffC4C4C4), width: 0),
+                    borderSide:
+                        const BorderSide(color: Color(0xffC4C4C4), width: 0),
                   ),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
-                      borderSide: BorderSide(color: Color(0xffC4C4C4))),
-                  constraints: BoxConstraints(maxHeight: 40)),
+                      borderSide: const BorderSide(color: Color(0xffC4C4C4))),
+                  constraints: const BoxConstraints(maxHeight: 40)),
               onChanged: (value) {
                 _filteredCountries = widget.countryList.stringSearch(value)
                   ..sort(
