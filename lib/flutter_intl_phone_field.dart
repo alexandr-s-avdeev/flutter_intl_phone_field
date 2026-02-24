@@ -2,7 +2,7 @@ library flutter_intl_phone_field;
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart' show kIsWeb, DiagnosticsProperty;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_intl_phone_field/country_picker_dialog.dart';
@@ -360,6 +360,15 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
   late String number;
 
   String? validatorMessage;
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty<InputDecoration>(
+      'decoration',
+      widget.decoration,
+    ));
+  }
 
   @override
   void initState() {
