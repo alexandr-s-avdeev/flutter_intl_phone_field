@@ -607,9 +607,9 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
       inputFormatters: widget.inputFormatters ??
           [
             numberFormatter,
-            FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
-            LengthLimitingTextInputFormatter(
-                widget.maxLength ?? _selectedCountry.maxLength),
+            // FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
+            // LengthLimitingTextInputFormatter(
+            //     widget.maxLength ?? _selectedCountry.maxLength),
           ],
       enabled: widget.enabled,
       keyboardAppearance: widget.keyboardAppearance,
