@@ -7800,6 +7800,26 @@ class Country {
     this.regionCode = "",
   });
 
+  String maskGenerator() {
+    // Common phone patterns; feel free to customize per-country by setting [mask].
+    switch (maxLength) {
+      case 10:
+        return "###-###-####";
+      case 9:
+        return "###-###-###";
+      case 8:
+        return "####-####";
+      case 7:
+        return "###-####";
+      case 6:
+        return "###-###";
+      case 5:
+        return "##-###";
+      default:
+        return List.filled(maxLength, "#").join();
+    }
+  }
+
   String get fullCountryCode {
     return dialCode + regionCode;
   }

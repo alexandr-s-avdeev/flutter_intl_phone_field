@@ -52,7 +52,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               contentPadding: EdgeInsets.zero,
               constraints: BoxConstraints(maxHeight: 40),
-
               border: OutlineInputBorder(
                 borderSide: BorderSide(color: Color(0xffC4C4C4)),
               ),
