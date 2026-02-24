@@ -549,19 +549,22 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
             }
           : (value) {
               if (value == null || value == "" || value.toString().isEmpty) {
-                return validatorMessage ?? "Please Enter Mobile Number";
+                // return validatorMessage ?? "Please Enter Mobile Number";'
+                return null;
               }
               if (!isNumeric(value)) {
-                return validatorMessage ?? "Please Enter Valid Mobile Number";
+                // return validatorMessage ?? "Please Enter Valid Mobile Number";
+                return null;
               }
-              if (!widget.disableLengthCheck) {
-                return value.length >= _selectedCountry.minLength &&
-                        value.length <=
-                            (widget.maxLength ?? _selectedCountry.maxLength)
-                    ? null
-                    : widget.invalidMessage;
-              }
-              return validatorMessage;
+              // if (!widget.disableLengthCheck) {
+              //   return value.length >= _selectedCountry.minLength &&
+              //           value.length <=
+              //               (widget.maxLength ?? _selectedCountry.maxLength)
+              //       ? null
+              //       : widget.invalidMessage;
+              // }
+              // return validatorMessage;
+              return null;
             },
       maxLength: widget.disableLengthCheck
           ? null
