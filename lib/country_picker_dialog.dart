@@ -120,6 +120,11 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
                     borderSide:
                         const BorderSide(color: Color(0xffC4C4C4), width: 0),
                   ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                    borderSide:
+                        const BorderSide(color: Color(0xffC4C4C4), width: 0),
+                  ),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                       borderSide: const BorderSide(color: Color(0xffC4C4C4))),

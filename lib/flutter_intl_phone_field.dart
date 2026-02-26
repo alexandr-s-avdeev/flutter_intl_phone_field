@@ -360,6 +360,8 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
   late List<Country> filteredCountries;
   late String number;
 
+  final TextEditingController _controller = TextEditingController();
+
   String? validatorMessage;
 
   @override
@@ -369,6 +371,37 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
       'decoration',
       widget.decoration,
     ));
+  }
+
+  late MaskTextInputFormatter numberFormatter;
+
+  String _pickMask(Country c) {
+    // поддержка "маска1 | маска2" (если ты так сделал в countries.dart)
+    final parts = c.mask
+        .split('|')
+        .map((e) => e.trim())
+        .where((e) => e.isNotEmpty)
+        .toList();
+    if (parts.isEmpty) return c.mask;
+
+    // выбираем маску по количеству '#' максимально близкую к maxLength (предпочтём равную)
+    int countHashes(String m) => '#'.allMatches(m).length;
+
+    final target = c.maxLength;
+    parts.sort((a, b) {
+      final da = (countHashes(a) - target).abs();
+      final db = (countHashes(b) - target).abs();
+      if (da != db) return da.compareTo(db);
+      // если одинаково близко — возьмём более длинную (чаще подходит)
+      return countHashes(b).compareTo(countHashes(a));
+    });
+
+    return parts.first;
+  }
+
+  void _applyCountryMask() {
+    final mask = _pickMask(_selectedCountry);
+    numberFormatter.updateMask(mask: mask);
   }
 
   @override
@@ -427,6 +460,12 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
         }
       },
     );
+
+    numberFormatter = MaskTextInputFormatter(
+      mask: _pickMask(_selectedCountry),
+      filter: {"#": RegExp(r'[0-9]')},
+      type: MaskAutoCompletionType.lazy,
+    );
   }
 
   Future<void> _changeCountryBottomSheet() async {
@@ -453,6 +492,8 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
           selectedCountry: _selectedCountry,
           onCountryChanged: (Country country) {
             _selectedCountry = country;
+            _applyCountryMask();
+            _controller.clear();
             widget.onCountryChanged?.call(country);
             setState(() {});
           },
@@ -478,6 +519,8 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
           selectedCountry: _selectedCountry,
           onCountryChanged: (Country country) {
             _selectedCountry = country;
+            _applyCountryMask();
+            _controller.clear();
             widget.onCountryChanged?.call(country);
             setState(() {});
           },
@@ -487,17 +530,11 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
     if (mounted) setState(() {});
   }
 
-  late final numberFormatter = MaskTextInputFormatter(
-    mask: _selectedCountry.maskGenerator(),
-    filter: {"#": RegExp(r'[0-9]')},
-    type: MaskAutoCompletionType.lazy,
-  );
-
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       key: widget.formFieldKey,
-      initialValue: (widget.controller == null) ? number : null,
+      // initialValue: (widget.controller == null) ? number : null,
       autofillHints: widget.autofillHints ??
           [
             AutofillHints.telephoneNumberNational,
@@ -510,26 +547,14 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
       cursorColor: widget.cursorColor,
       onTap: widget.onTap,
       onFieldSubmitted: widget.onSubmitted,
-      controller: widget.controller,
+      controller: widget.controller ?? _controller,
       focusNode: widget.focusNode,
       cursorHeight: widget.cursorHeight,
       cursorRadius: widget.cursorRadius,
       cursorWidth: widget.cursorWidth,
       showCursor: widget.showCursor,
       magnifierConfiguration: widget.magnifierConfiguration,
-      decoration: const InputDecoration(
-        errorBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Color(0xffC4C4C4)),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Color(0xffC4C4C4)),
-        ),
-        contentPadding: EdgeInsets.zero,
-        constraints: BoxConstraints(maxHeight: 50),
-        border: OutlineInputBorder(
-          borderSide: BorderSide(color: Color(0xffC4C4C4)),
-        ),
-      ).copyWith(
+      decoration: widget.decoration.copyWith(
         prefixIcon: widget.prefixIcon ?? _buildFlagsButton(),
         counterText: !widget.enabled ? '' : null,
       ),
@@ -540,7 +565,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
             countryISOCode: _selectedCountry.code,
             countryCode:
                 '+${_selectedCountry.dialCode}${_selectedCountry.regionCode}',
-            number: value ?? "",
+            number: numberFormatter.getUnmaskedText(),
           ),
         );
       },
@@ -548,7 +573,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
         final phoneNumber = PhoneNumber(
           countryISOCode: _selectedCountry.code,
           countryCode: '+${_selectedCountry.fullCountryCode}',
-          number: value,
+          number: numberFormatter.getUnmaskedText(),
         );
 
         if (widget.autovalidateMode != AutovalidateMode.disabled) {
@@ -594,9 +619,9 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
               // return validatorMessage;
               return null;
             },
-      maxLength: widget.disableLengthCheck
-          ? null
-          : widget.maxLength ?? _selectedCountry.maxLength,
+      // maxLength: widget.disableLengthCheck
+      //     ? null
+      //     : widget.maxLength ?? _selectedCountry.maxLength,
       onEditingComplete: widget.onEditingComplete,
       expands: widget.expands,
       maxLines: widget.maxLines,
@@ -622,58 +647,56 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
   Container _buildFlagsButton() {
     return Container(
       margin: widget.flagsButtonMargin,
-      child: DecoratedBox(
-        decoration: widget.dropdownDecoration,
-        child: InkWell(
-          borderRadius: widget.dropdownDecoration.borderRadius as BorderRadius?,
-          onTap: widget.enabled
-              ? widget.dialogType == DialogType.showDialog
-                  ? _changeCountryBottomSheet
-                  : _changeCountryModalBottomSheet
-              : null,
-          child: Padding(
-            padding: widget.flagsButtonPadding,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const SizedBox(
-                  width: 4,
-                ),
-                if (widget.enabled &&
-                    widget.showDropdownIcon &&
-                    widget.dropdownIconPosition == IconPosition.leading) ...[
-                  widget.dropdownIcon,
-                  const SizedBox(width: 4),
-                ],
-                if (widget.showCountryFlag) ...[
-                  kIsWeb
-                      ? Image.asset(
-                          'assets/flags/${_selectedCountry.code.toLowerCase()}.png',
-                          package: 'flutter_intl_phone_field',
-                          width: 32,
-                        )
-                      : Text(
-                          _selectedCountry.flag,
-                          style: const TextStyle(fontSize: 18),
-                        ),
-                  const SizedBox(width: 8),
-                ],
-                FittedBox(
-                  child: Text(
-                    '+${_selectedCountry.dialCode}',
-                    style: widget.dropdownTextStyle,
-                  ),
-                ),
-                if (widget.enabled &&
-                    widget.showDropdownIcon &&
-                    widget.dropdownIconPosition == IconPosition.trailing) ...[
-                  const SizedBox(width: 4),
-                  widget.dropdownIcon,
-                ],
+      decoration: widget.dropdownDecoration,
+      child: InkWell(
+        borderRadius: widget.dropdownDecoration.borderRadius as BorderRadius?,
+        onTap: widget.enabled
+            ? widget.dialogType == DialogType.showDialog
+                ? _changeCountryBottomSheet
+                : _changeCountryModalBottomSheet
+            : null,
+        child: Padding(
+          padding: widget.flagsButtonPadding,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              const SizedBox(
+                width: 4,
+              ),
+              if (widget.enabled &&
+                  widget.showDropdownIcon &&
+                  widget.dropdownIconPosition == IconPosition.leading) ...[
+                widget.dropdownIcon,
+                const SizedBox(width: 4),
+              ],
+              if (widget.showCountryFlag) ...[
+                kIsWeb
+                    ? Image.asset(
+                        'assets/flags/${_selectedCountry.code.toLowerCase()}.png',
+                        package: 'flutter_intl_phone_field',
+                        width: 32,
+                      )
+                    : Text(
+                        _selectedCountry.flag,
+                        style: const TextStyle(fontSize: 18),
+                      ),
                 const SizedBox(width: 8),
               ],
-            ),
+              FittedBox(
+                child: Text(
+                  '+${_selectedCountry.dialCode}',
+                  style: widget.dropdownTextStyle,
+                ),
+              ),
+              if (widget.enabled &&
+                  widget.showDropdownIcon &&
+                  widget.dropdownIconPosition == IconPosition.trailing) ...[
+                const SizedBox(width: 4),
+                widget.dropdownIcon,
+              ],
+              const SizedBox(width: 8),
+            ],
           ),
         ),
       ),

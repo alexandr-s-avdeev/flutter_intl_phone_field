@@ -3,6 +3,7 @@
 
 const List<Country> countries = [
   Country(
+    mask: '###-###-###',
     name: "Afghanistan",
     nameTranslations: {
       "sk": "Afganistan",
@@ -35,6 +36,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "Åland Islands",
     nameTranslations: {
       "sk": "Alandy",
@@ -67,6 +69,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-###-###',
     name: "Albania",
     nameTranslations: {
       "sk": "Albánsko",
@@ -99,6 +102,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Algeria",
     nameTranslations: {
       "sk": "Alžírsko",
@@ -131,6 +135,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####',
     name: "American Samoa",
     nameTranslations: {
       "sk": "Americká Samoa",
@@ -163,6 +168,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###',
     name: "Andorra",
     nameTranslations: {
       "sk": "Andorra",
@@ -195,6 +201,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-###-###',
     name: "Angola",
     nameTranslations: {
       "sk": "Angola",
@@ -227,6 +234,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####',
     name: "Anguilla",
     nameTranslations: {
       "sk": "Anguilla",
@@ -259,6 +267,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###',
     name: "Antarctica",
     nameTranslations: {
       "sk": "Antarktída",
@@ -291,6 +300,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-####',
     name: "Antigua and Barbuda",
     nameTranslations: {
       "sk": "Antigua a Barbuda",
@@ -323,6 +333,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###-###',
     name: "Argentina",
     nameTranslations: {
       "sk": "Argentína",
@@ -355,6 +366,7 @@ const List<Country> countries = [
     maxLength: 12,
   ),
   Country(
+    mask: '####-####',
     name: "Armenia",
     nameTranslations: {
       "sk": "Arménsko",
@@ -387,6 +399,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-####',
     name: "Aruba",
     nameTranslations: {
       "sk": "Aruba",
@@ -419,6 +432,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###',
     name: "Australia",
     nameTranslations: {
       "sk": "Austrália",
@@ -451,6 +465,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###-####',
     name: "Austria",
     nameTranslations: {
       "sk": "Rakúsko",
@@ -483,6 +498,7 @@ const List<Country> countries = [
     maxLength: 13,
   ),
   Country(
+    mask: '###-###-###',
     name: "Azerbaijan",
     nameTranslations: {
       "sk": "Azerbajdžan",
@@ -515,6 +531,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####',
     name: "Bahamas",
     nameTranslations: {
       "sk": "Bahamy",
@@ -547,6 +564,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Bahrain",
     nameTranslations: {
       "sk": "Bahrajn",
@@ -579,6 +597,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-####',
     name: "Bangladesh",
     nameTranslations: {
       "sk": "Bangladéš",
@@ -611,6 +630,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####',
     name: "Barbados",
     nameTranslations: {
       "sk": "Barbados",
@@ -643,6 +663,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-### | ###-###-####',
     name: "Belarus",
     nameTranslations: {
       "sk": "Bielorusko",
@@ -675,6 +696,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-###',
     name: "Belgium",
     nameTranslations: {
       "sk": "Belgicko",
@@ -707,6 +729,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####',
     name: "Belize",
     nameTranslations: {
       "sk": "Belize",
@@ -739,6 +762,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Benin",
     nameTranslations: {
       "sk": "Benin",
@@ -771,6 +795,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-####',
     name: "Bermuda",
     nameTranslations: {
       "sk": "Bermudy",
@@ -803,6 +828,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Bhutan",
     nameTranslations: {
       "sk": "Bhután",
@@ -835,6 +861,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Bolivia, Plurinational State of bolivia",
     nameTranslations: {
       "sk": "Bolívia",
@@ -867,6 +894,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Bosnia and Herzegovina",
     nameTranslations: {
       "sk": "Bosna a Hercegovina",
@@ -899,6 +927,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '####-####',
     name: "Botswana",
     nameTranslations: {
       "sk": "Botswana",
@@ -931,6 +960,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "Bouvet Island",
     nameTranslations: {
       "sk": "Bouvetov ostrov",
@@ -963,6 +993,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-####-####',
     name: "Brazil",
     nameTranslations: {
       "sk": "Brazília",
@@ -995,6 +1026,7 @@ const List<Country> countries = [
     maxLength: 11,
   ),
   Country(
+    mask: '###-####',
     name: "British Indian Ocean Territory",
     nameTranslations: {
       "sk": "Britské indickooceánske územie",
@@ -1027,6 +1059,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-####',
     name: "Brunei Darussalam",
     nameTranslations: {
       "sk": "Brunej",
@@ -1059,6 +1092,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###',
     name: "Bulgaria",
     nameTranslations: {
       "sk": "Bulharsko",
@@ -1091,6 +1125,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '####-####',
     name: "Burkina Faso",
     nameTranslations: {
       "sk": "Burkina Faso",
@@ -1123,6 +1158,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Burundi",
     nameTranslations: {
       "sk": "Burundi",
@@ -1155,6 +1191,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Cambodia",
     nameTranslations: {
       "sk": "Kambodža",
@@ -1187,6 +1224,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Cameroon",
     nameTranslations: {
       "sk": "Kamerun",
@@ -1219,6 +1257,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "Canada",
     nameTranslations: {
       "sk": "Kanada",
@@ -1251,6 +1290,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####',
     name: "Cayman Islands",
     nameTranslations: {
       "sk": "Kajmanie ostrovy",
@@ -1283,6 +1323,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Central African Republic",
     nameTranslations: {
       "sk": "Stredoafrická republika",
@@ -1315,6 +1356,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-####',
     name: "Chad",
     nameTranslations: {
       "sk": "Čad",
@@ -1347,6 +1389,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###',
     name: "Chile",
     nameTranslations: {
       "sk": "Čile",
@@ -1379,6 +1422,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####-#### | ###-###-###-###',
     name: "China",
     nameTranslations: {
       "sk": "Čína",
@@ -1411,6 +1455,7 @@ const List<Country> countries = [
     maxLength: 12,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "Christmas Island",
     nameTranslations: {
       "sk": "Vianočný ostrov",
@@ -1443,6 +1488,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "Cocos (Keeling) Islands",
     nameTranslations: {
       "sk": "Kokosové ostrovy",
@@ -1475,6 +1521,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-###-####',
     name: "Colombia",
     nameTranslations: {
       "sk": "Kolumbia",
@@ -1507,6 +1554,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####',
     name: "Comoros",
     nameTranslations: {
       "sk": "Komory",
@@ -1539,6 +1587,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-####',
     name: "Congo",
     nameTranslations: {
       "sk": "Konžská republika",
@@ -1571,6 +1620,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###',
     name: "Congo, The Democratic Republic of the Congo",
     nameTranslations: {
       "sk": "Konžská demokratická republika",
@@ -1603,6 +1653,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '##-###',
     name: "Cook Islands",
     nameTranslations: {
       "sk": "Cookove ostrovy",
@@ -1635,6 +1686,7 @@ const List<Country> countries = [
     maxLength: 5,
   ),
   Country(
+    mask: '####-####',
     name: "Costa Rica",
     nameTranslations: {
       "sk": "Kostarika",
@@ -1667,6 +1719,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-####',
     name: "Côte d'Ivoire",
     nameTranslations: {
       "sk": "Pobrežie Slonoviny",
@@ -1699,6 +1752,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-###-###',
     name: "Croatia",
     nameTranslations: {
       "sk": "Chorvátsko",
@@ -1731,6 +1785,7 @@ const List<Country> countries = [
     maxLength: 12,
   ),
   Country(
+    mask: '####-####',
     name: "Cuba",
     nameTranslations: {
       "sk": "Kuba",
@@ -1763,6 +1818,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Cyprus",
     nameTranslations: {
       "sk": "Cyprus",
@@ -1795,6 +1851,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Czech Republic",
     nameTranslations: {
       "sk": "Česko",
@@ -1827,6 +1884,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '####-####',
     name: "Denmark",
     nameTranslations: {
       "sk": "Dánsko",
@@ -1859,6 +1917,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###',
     name: "Djibouti",
     nameTranslations: {
       "sk": "Džibutsko",
@@ -1891,6 +1950,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-####',
     name: "Dominica",
     nameTranslations: {
       "sk": "Dominika",
@@ -1923,6 +1983,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-####',
     name: "Dominican Republic",
     nameTranslations: {
       "sk": "Dominikánska republika",
@@ -1955,6 +2016,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '####-#### | ###-###-###',
     name: "Ecuador",
     nameTranslations: {
       "sk": "Ekvádor",
@@ -1987,6 +2049,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "Egypt",
     nameTranslations: {
       "sk": "Egypt",
@@ -2019,6 +2082,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####-####',
     name: "El Salvador",
     nameTranslations: {
       "sk": "Salvádor",
@@ -2051,6 +2115,7 @@ const List<Country> countries = [
     maxLength: 11,
   ),
   Country(
+    mask: '###-###',
     name: "Equatorial Guinea",
     nameTranslations: {
       "sk": "Rovníková Guinea",
@@ -2083,6 +2148,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-####',
     name: "Eritrea",
     nameTranslations: {
       "sk": "Eritrea",
@@ -2115,6 +2181,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-####',
     name: "Estonia",
     nameTranslations: {
       "sk": "Estónsko",
@@ -2147,6 +2214,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-###',
     name: "Ethiopia",
     nameTranslations: {
       "sk": "Etiópia",
@@ -2179,6 +2247,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '##-###',
     name: "Falkland Islands (Malvinas)",
     nameTranslations: {
       "sk": "Falklandy",
@@ -2211,6 +2280,7 @@ const List<Country> countries = [
     maxLength: 5,
   ),
   Country(
+    mask: '###-###',
     name: "Faroe Islands",
     nameTranslations: {
       "sk": "Faerské ostrovy",
@@ -2243,6 +2313,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-####',
     name: "Fiji",
     nameTranslations: {
       "sk": "Fidži",
@@ -2275,6 +2346,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###-###',
     name: "Finland",
     nameTranslations: {
       "sk": "Fínsko",
@@ -2307,6 +2379,7 @@ const List<Country> countries = [
     maxLength: 12,
   ),
   Country(
+    mask: '###-###-###',
     name: "France",
     nameTranslations: {
       "sk": "Francúzsko",
@@ -2339,6 +2412,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "French Guiana",
     nameTranslations: {
       "sk": "Francúzska Guyana",
@@ -2371,6 +2445,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-###',
     name: "French Polynesia",
     nameTranslations: {
       "sk": "Francúzska Polynézia",
@@ -2403,6 +2478,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "French Southern Territories",
     nameTranslations: {
       "sk": "Francúzske južné a antarktické územia",
@@ -2435,6 +2511,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-###-###',
     name: "Gabon",
     nameTranslations: {
       "sk": "Gabon",
@@ -2467,6 +2544,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####',
     name: "Gambia",
     nameTranslations: {
       "sk": "Gambia",
@@ -2499,6 +2577,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-#### | ###-###-###',
     name: "Georgia",
     nameTranslations: {
       "sk": "Gruzínsko",
@@ -2531,6 +2610,8 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask:
+        '###-###-### | ###-###-#### | ###-####-#### | ###-###-###-### | ###-###-###-####',
     name: "Germany",
     nameTranslations: {
       "sk": "Nemecko",
@@ -2563,6 +2644,7 @@ const List<Country> countries = [
     maxLength: 13,
   ),
   Country(
+    mask: '###-###-###',
     name: "Ghana",
     nameTranslations: {
       "sk": "Ghana",
@@ -2595,6 +2677,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '####-####',
     name: "Gibraltar",
     nameTranslations: {
       "sk": "Gibraltár",
@@ -2627,6 +2710,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-####',
     name: "Greece",
     nameTranslations: {
       "sk": "Grécko",
@@ -2659,6 +2743,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###',
     name: "Greenland",
     nameTranslations: {
       "sk": "Grónsko",
@@ -2691,6 +2776,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-####',
     name: "Grenada",
     nameTranslations: {
       "sk": "Grenada",
@@ -2723,6 +2809,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "Guadeloupe",
     nameTranslations: {
       "sk": "Guadeloupe",
@@ -2755,6 +2842,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-####',
     name: "Guam",
     nameTranslations: {
       "sk": "Guam",
@@ -2787,6 +2875,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Guatemala",
     nameTranslations: {
       "sk": "Guatemala",
@@ -2819,6 +2908,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###',
     name: "Guernsey",
     nameTranslations: {
       "sk": "Guernsey",
@@ -2851,6 +2941,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '####-#### | ###-###-###',
     name: "Guinea",
     nameTranslations: {
       "sk": "Guinea",
@@ -2883,6 +2974,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####',
     name: "Guinea-Bissau",
     nameTranslations: {
       "sk": "Guinea-Bissau",
@@ -2915,6 +3007,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-####',
     name: "Guyana",
     nameTranslations: {
       "sk": "Guyana",
@@ -2947,6 +3040,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Haiti",
     nameTranslations: {
       "sk": "Haiti",
@@ -2979,6 +3073,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "Heard Island and Mcdonald Islands",
     nameTranslations: {
       "sk": "Heardov ostrov a Macdonaldove ostrovy",
@@ -3011,6 +3106,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-###-####',
     name: "Holy See (Vatican City State)",
     nameTranslations: {
       "sk": "Vatikán",
@@ -3043,6 +3139,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '####-####',
     name: "Honduras",
     nameTranslations: {
       "sk": "Honduras",
@@ -3075,6 +3172,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Hong Kong",
     nameTranslations: {
       "sk": "Hongkong – OAO Číny",
@@ -3107,6 +3205,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Hungary",
     nameTranslations: {
       "sk": "Maďarsko",
@@ -3139,6 +3238,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-#### | ####-#### | ###-###-###',
     name: "Iceland",
     nameTranslations: {
       "sk": "Island",
@@ -3171,6 +3271,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "India",
     nameTranslations: {
       "sk": "India",
@@ -3203,6 +3304,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-#### | ###-####-#### | ###-###-###-### | ###-###-###-####',
     name: "Indonesia",
     nameTranslations: {
       "sk": "Indonézia",
@@ -3235,6 +3337,7 @@ const List<Country> countries = [
     maxLength: 13,
   ),
   Country(
+    mask: '###-###-####',
     name: "Iran, Islamic Republic of Persian Gulf",
     nameTranslations: {
       "sk": "Irán",
@@ -3267,6 +3370,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-####',
     name: "Iraq",
     nameTranslations: {
       "sk": "Irak",
@@ -3299,6 +3403,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-#### | ####-#### | ###-###-###',
     name: "Ireland",
     nameTranslations: {
       "sk": "Írsko",
@@ -3331,6 +3436,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###',
     name: "Isle of Man",
     nameTranslations: {
       "sk": "Ostrov Man",
@@ -3363,6 +3469,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-###-###',
     name: "Israel",
     nameTranslations: {
       "sk": "Izrael",
@@ -3395,6 +3502,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-### | ###-###-####',
     name: "Campione d'Italia",
     nameTranslations: {
       "sk": "Taliansko",
@@ -3427,6 +3535,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####',
     name: "Jamaica",
     nameTranslations: {
       "sk": "Jamajka",
@@ -3459,6 +3568,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-####',
     name: "Japan",
     nameTranslations: {
       "sk": "Japonsko",
@@ -3491,6 +3601,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###',
     name: "Jersey",
     nameTranslations: {
       "sk": "Jersey",
@@ -3523,6 +3634,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-###-###',
     name: "Jordan",
     nameTranslations: {
       "sk": "Jordánsko",
@@ -3555,6 +3667,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "Kazakhstan",
     nameTranslations: {
       "sk": "Kazachstan",
@@ -3587,6 +3700,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-###',
     name: "Kenya",
     nameTranslations: {
       "sk": "Keňa",
@@ -3619,6 +3733,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '##-###',
     name: "Kiribati",
     nameTranslations: {
       "sk": "Kiribati",
@@ -3651,6 +3766,7 @@ const List<Country> countries = [
     maxLength: 5,
   ),
   Country(
+    mask: '###-###-####',
     name: "Korea, Democratic People's Republic of Korea",
     nameTranslations: {
       "sk": "Severná Kórea",
@@ -3683,6 +3799,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####-####',
     name: "Korea, Republic of South Korea",
     nameTranslations: {
       "sk": "Južná Kórea",
@@ -3715,6 +3832,7 @@ const List<Country> countries = [
     maxLength: 11,
   ),
   Country(
+    mask: '####-####',
     name: "Kuwait",
     nameTranslations: {
       "sk": "Kuvajt",
@@ -3747,6 +3865,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Kyrgyzstan",
     nameTranslations: {
       "sk": "Kirgizsko",
@@ -3779,6 +3898,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "Laos",
     nameTranslations: {
       "sk": "Laos",
@@ -3811,6 +3931,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '####-####',
     name: "Latvia",
     nameTranslations: {
       "sk": "Lotyšsko",
@@ -3843,6 +3964,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Lebanon",
     nameTranslations: {
       "sk": "Libanon",
@@ -3875,6 +3997,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Lesotho",
     nameTranslations: {
       "sk": "Lesotho",
@@ -3907,6 +4030,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Liberia",
     nameTranslations: {
       "sk": "Libéria",
@@ -3939,6 +4063,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Libyan Arab Jamahiriya",
     nameTranslations: {
       "sk": "Líbya",
@@ -3971,6 +4096,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Liechtenstein",
     nameTranslations: {
       "sk": "Lichtenštajnsko",
@@ -4003,6 +4129,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '####-####',
     name: "Lithuania",
     nameTranslations: {
       "sk": "Litva",
@@ -4035,6 +4162,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-####-####',
     name: "Luxembourg",
     nameTranslations: {
       "sk": "Luxembursko",
@@ -4067,6 +4195,7 @@ const List<Country> countries = [
     maxLength: 11,
   ),
   Country(
+    mask: '####-####',
     name: "Macao",
     nameTranslations: {
       "sk": "Macao – OAO Číny",
@@ -4099,6 +4228,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Macedonia",
     nameTranslations: {
       "sk": "Severné Macedónsko",
@@ -4131,6 +4261,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-####',
     name: "Madagascar",
     nameTranslations: {
       "sk": "Madagaskar",
@@ -4163,6 +4294,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-#### | ####-#### | ###-###-###',
     name: "Malawi",
     nameTranslations: {
       "sk": "Malawi",
@@ -4195,6 +4327,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-### | ###-###-####',
     name: "Malaysia",
     nameTranslations: {
       "sk": "Malajzia",
@@ -4227,6 +4360,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####',
     name: "Maldives",
     nameTranslations: {
       "sk": "Maldivy",
@@ -4259,6 +4393,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Mali",
     nameTranslations: {
       "sk": "Mali",
@@ -4291,6 +4426,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Malta",
     nameTranslations: {
       "sk": "Malta",
@@ -4323,6 +4459,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-####',
     name: "Marshall Islands",
     nameTranslations: {
       "sk": "Marshallove ostrovy",
@@ -4355,6 +4492,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "Martinique",
     nameTranslations: {
       "sk": "Martinik",
@@ -4387,6 +4525,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '####-####',
     name: "Mauritania",
     nameTranslations: {
       "sk": "Mauritánia",
@@ -4419,6 +4558,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-#### | ####-####',
     name: "Mauritius",
     nameTranslations: {
       "sk": "Maurícius",
@@ -4451,6 +4591,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Mayotte",
     nameTranslations: {
       "sk": "Mayotte",
@@ -4483,6 +4624,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "Mexico",
     nameTranslations: {
       "sk": "Mexiko",
@@ -4515,6 +4657,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####',
     name: "Micronesia, Federated States of Micronesia",
     nameTranslations: {
       "sk": "Mikronézia",
@@ -4547,6 +4690,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Moldova",
     nameTranslations: {
       "sk": "Moldavsko",
@@ -4579,6 +4723,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Monaco",
     nameTranslations: {
       "sk": "Monako",
@@ -4611,6 +4756,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '####-####',
     name: "Mongolia",
     nameTranslations: {
       "sk": "Mongolsko",
@@ -4643,6 +4789,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###-###',
     name: "Montenegro",
     nameTranslations: {
       "sk": "Čierna Hora",
@@ -4675,6 +4822,7 @@ const List<Country> countries = [
     maxLength: 12,
   ),
   Country(
+    mask: '###-####',
     name: "Montserrat",
     nameTranslations: {
       "sk": "Montserrat",
@@ -4707,6 +4855,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###',
     name: "Morocco",
     nameTranslations: {
       "sk": "Maroko",
@@ -4739,6 +4888,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Mozambique",
     nameTranslations: {
       "sk": "Mozambik",
@@ -4771,6 +4921,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Myanmar",
     nameTranslations: {
       "sk": "Mjanmarsko",
@@ -4803,6 +4954,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "Namibia",
     nameTranslations: {
       "sk": "Namíbia",
@@ -4835,6 +4987,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####',
     name: "Nauru",
     nameTranslations: {
       "sk": "Nauru",
@@ -4867,6 +5020,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-####',
     name: "Nepal",
     nameTranslations: {
       "sk": "Nepál",
@@ -4899,6 +5053,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-###',
     name: "Netherlands",
     nameTranslations: {
       "sk": "Holandsko",
@@ -4931,6 +5086,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###',
     name: "New Caledonia",
     nameTranslations: {
       "sk": "Nová Kaledónia",
@@ -4963,6 +5119,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-###-####',
     name: "New Zealand",
     nameTranslations: {
       "sk": "Nový Zéland",
@@ -4995,6 +5152,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '####-####',
     name: "Nicaragua",
     nameTranslations: {
       "sk": "Nikaragua",
@@ -5027,6 +5185,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Niger",
     nameTranslations: {
       "sk": "Niger",
@@ -5059,6 +5218,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-#### | ###-####-####',
     name: "Nigeria",
     nameTranslations: {
       "sk": "Nigéria",
@@ -5091,6 +5251,7 @@ const List<Country> countries = [
     maxLength: 11,
   ),
   Country(
+    mask: '####',
     name: "Niue",
     nameTranslations: {
       "sk": "Niue",
@@ -5123,6 +5284,7 @@ const List<Country> countries = [
     maxLength: 4,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "Norfolk Island",
     nameTranslations: {
       "sk": "Norfolk",
@@ -5155,6 +5317,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-####',
     name: "Northern Mariana Islands",
     nameTranslations: {
       "sk": "Severné Mariány",
@@ -5187,6 +5350,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Norway",
     nameTranslations: {
       "sk": "Nórsko",
@@ -5219,6 +5383,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Oman",
     nameTranslations: {
       "sk": "Omán",
@@ -5251,6 +5416,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-####',
     name: "Pakistan",
     nameTranslations: {
       "sk": "Pakistan",
@@ -5283,6 +5449,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####',
     name: "Palau",
     nameTranslations: {
       "sk": "Palau",
@@ -5315,6 +5482,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###',
     name: "Palestinian Territory, Occupied",
     nameTranslations: {
       "sk": "Palestínske územia",
@@ -5347,6 +5515,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '####-####',
     name: "Panama",
     nameTranslations: {
       "sk": "Panama",
@@ -5379,6 +5548,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-####-####',
     name: "Papua New Guinea",
     nameTranslations: {
       "sk": "Papua-Nová Guinea",
@@ -5411,6 +5581,7 @@ const List<Country> countries = [
     maxLength: 11,
   ),
   Country(
+    mask: '###-###-####',
     name: "Paraguay",
     nameTranslations: {
       "sk": "Paraguaj",
@@ -5443,6 +5614,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-###',
     name: "Peru",
     nameTranslations: {
       "sk": "Peru",
@@ -5475,6 +5647,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "Philippines",
     nameTranslations: {
       "sk": "Filipíny",
@@ -5507,6 +5680,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-####',
     name: "Pitcairn",
     nameTranslations: {
       "sk": "Pitcairnove ostrovy",
@@ -5539,6 +5713,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-###',
     name: "Poland",
     nameTranslations: {
       "sk": "Poľsko",
@@ -5571,6 +5746,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Portugal",
     nameTranslations: {
       "sk": "Portugalsko",
@@ -5603,6 +5779,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "Puerto Rico",
     nameTranslations: {
       "sk": "Portoriko",
@@ -5635,6 +5812,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '####-####',
     name: "Qatar",
     nameTranslations: {
       "sk": "Katar",
@@ -5667,6 +5845,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Romania",
     nameTranslations: {
       "sk": "Rumunsko",
@@ -5699,6 +5878,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "Russia",
     nameTranslations: {
       "sk": "Rusko",
@@ -5731,6 +5911,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-###',
     name: "Rwanda",
     nameTranslations: {
       "sk": "Rwanda",
@@ -5763,6 +5944,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Reunion",
     nameTranslations: {
       "sk": "Réunion",
@@ -5795,6 +5977,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Saint Barthelemy",
     nameTranslations: {
       "sk": "Svätý Bartolomej",
@@ -5827,6 +6010,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '####',
     name: "Saint Helena, Ascension and Tristan Da Cunha",
     nameTranslations: {
       "sk": "Svätá Helena",
@@ -5859,6 +6043,7 @@ const List<Country> countries = [
     maxLength: 4,
   ),
   Country(
+    mask: '###-####',
     name: "Saint Kitts and Nevis",
     nameTranslations: {
       "sk": "Svätý Krištof a Nevis",
@@ -5891,6 +6076,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-####',
     name: "Saint Lucia",
     nameTranslations: {
       "sk": "Svätá Lucia",
@@ -5923,6 +6109,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###',
     name: "Saint Martin",
     nameTranslations: {
       "sk": "Svätý Martin (fr.)",
@@ -5955,6 +6142,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###',
     name: "Saint Pierre and Miquelon",
     nameTranslations: {
       "sk": "Saint Pierre a Miquelon",
@@ -5987,6 +6175,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-####',
     name: "Saint Vincent and the Grenadines",
     nameTranslations: {
       "sk": "Svätý Vincent a Grenadíny",
@@ -6019,6 +6208,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-####',
     name: "Samoa",
     nameTranslations: {
       "sk": "Samoa",
@@ -6051,6 +6241,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-####',
     name: "San Marino",
     nameTranslations: {
       "sk": "San Maríno",
@@ -6083,6 +6274,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####',
     name: "Sao Tome and Principe",
     nameTranslations: {
       "sk": "Svätý Tomáš a Princov ostrov",
@@ -6115,6 +6307,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-###',
     name: "Saudi Arabia",
     nameTranslations: {
       "sk": "Saudská Arábia",
@@ -6147,6 +6340,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Senegal",
     nameTranslations: {
       "sk": "Senegal",
@@ -6179,6 +6373,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###-###',
     name: "Serbia",
     nameTranslations: {
       "sk": "Srbsko",
@@ -6211,6 +6406,7 @@ const List<Country> countries = [
     maxLength: 12,
   ),
   Country(
+    mask: '###-###',
     name: "Seychelles",
     nameTranslations: {
       "sk": "Seychely",
@@ -6243,6 +6439,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '####-####',
     name: "Sierra Leone",
     nameTranslations: {
       "sk": "Sierra Leone",
@@ -6275,6 +6472,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Singapore",
     nameTranslations: {
       "sk": "Singapur",
@@ -6307,6 +6505,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "Slovakia",
     nameTranslations: {
       "sk": "Slovensko",
@@ -6339,6 +6538,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '####-####',
     name: "Slovenia",
     nameTranslations: {
       "sk": "Slovinsko",
@@ -6371,6 +6571,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '##-###',
     name: "Solomon Islands",
     nameTranslations: {
       "sk": "Šalamúnove ostrovy",
@@ -6403,6 +6604,7 @@ const List<Country> countries = [
     maxLength: 5,
   ),
   Country(
+    mask: '####-####',
     name: "Somalia",
     nameTranslations: {
       "sk": "Somálsko",
@@ -6435,6 +6637,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-###',
     name: "South Africa",
     nameTranslations: {
       "sk": "Južná Afrika",
@@ -6467,6 +6670,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "South Sudan",
     nameTranslations: {
       "sk": "Južný Sudán",
@@ -6499,6 +6703,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####-####-####',
     name: "South Georgia and the South Sandwich Islands",
     nameTranslations: {
       "sk": "Južná Georgia a Južné Sandwichove ostrovy",
@@ -6531,6 +6736,7 @@ const List<Country> countries = [
     maxLength: 15,
   ),
   Country(
+    mask: '###-###-###',
     name: "Spain",
     nameTranslations: {
       "sk": "Španielsko",
@@ -6563,6 +6769,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Sri Lanka",
     nameTranslations: {
       "sk": "Srí Lanka",
@@ -6595,6 +6802,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Sudan",
     nameTranslations: {
       "sk": "Sudán",
@@ -6627,6 +6835,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####',
     name: "Suriname",
     nameTranslations: {
       "sk": "Surinam",
@@ -6659,6 +6868,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Svalbard and Jan Mayen",
     nameTranslations: {
       "sk": "Svalbard a Jan Mayen",
@@ -6691,6 +6901,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####-####',
     name: "Eswatini",
     nameTranslations: {
       "sk": "Eswatini",
@@ -6723,6 +6934,8 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask:
+        '###-#### | ####-#### | ###-###-### | ###-###-#### | ###-####-#### | ###-###-###-### | ###-###-###-####',
     name: "Sweden",
     nameTranslations: {
       "sk": "Švédsko",
@@ -6755,6 +6968,7 @@ const List<Country> countries = [
     maxLength: 13,
   ),
   Country(
+    mask: '###-###-### | ###-###-#### | ###-####-#### | ###-###-###-###',
     name: "Switzerland",
     nameTranslations: {
       "sk": "Švajčiarsko",
@@ -6787,6 +7001,7 @@ const List<Country> countries = [
     maxLength: 12,
   ),
   Country(
+    mask: '###-###-###',
     name: "Syrian Arab Republic",
     nameTranslations: {
       "sk": "Sýria",
@@ -6819,6 +7034,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Taiwan",
     nameTranslations: {
       "sk": "Taiwan",
@@ -6851,6 +7067,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Tajikistan",
     nameTranslations: {
       "sk": "Tadžikistan",
@@ -6883,6 +7100,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Tanzania, United Republic of Tanzania",
     nameTranslations: {
       "sk": "Tanzánia",
@@ -6915,6 +7133,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Thailand",
     nameTranslations: {
       "sk": "Thajsko",
@@ -6947,6 +7166,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####',
     name: "Timor-Leste",
     nameTranslations: {
       "sk": "Východný Timor",
@@ -6979,6 +7199,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Togo",
     nameTranslations: {
       "sk": "Togo",
@@ -7011,6 +7232,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '####',
     name: "Tokelau",
     nameTranslations: {
       "sk": "Tokelau",
@@ -7043,6 +7265,7 @@ const List<Country> countries = [
     maxLength: 4,
   ),
   Country(
+    mask: '###-####',
     name: "Tonga",
     nameTranslations: {
       "sk": "Tonga",
@@ -7075,6 +7298,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-####',
     name: "Trinidad and Tobago",
     nameTranslations: {
       "sk": "Trinidad a Tobago",
@@ -7107,6 +7331,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '####-####',
     name: "Tunisia",
     nameTranslations: {
       "sk": "Tunisko",
@@ -7139,6 +7364,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-###-####',
     name: "Turkey",
     nameTranslations: {
       "sk": "Turecko",
@@ -7171,6 +7397,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '####-####',
     name: "Turkmenistan",
     nameTranslations: {
       "sk": "Turkménsko",
@@ -7203,6 +7430,7 @@ const List<Country> countries = [
     maxLength: 8,
   ),
   Country(
+    mask: '###-####',
     name: "Turks and Caicos Islands",
     nameTranslations: {
       "sk": "Turks a Caicos",
@@ -7235,6 +7463,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###',
     name: "Tuvalu",
     nameTranslations: {
       "sk": "Tuvalu",
@@ -7267,6 +7496,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-###-###',
     name: "Uganda",
     nameTranslations: {
       "sk": "Uganda",
@@ -7299,6 +7529,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Ukraine",
     nameTranslations: {
       "sk": "Ukrajina",
@@ -7331,6 +7562,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "United Arab Emirates",
     nameTranslations: {
       "sk": "Spojené arabské emiráty",
@@ -7363,6 +7595,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-####',
     name: "United Kingdom",
     nameTranslations: {
       "sk": "Spojené kráľovstvo",
@@ -7395,6 +7628,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-####',
     name: "United States",
     nameTranslations: {
       "sk": "Spojené štáty",
@@ -7427,6 +7661,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-###-###',
     name: "Uruguay",
     nameTranslations: {
       "sk": "Uruguaj",
@@ -7459,6 +7694,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Uzbekistan",
     nameTranslations: {
       "sk": "Uzbekistan",
@@ -7491,6 +7727,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-####',
     name: "Vanuatu",
     nameTranslations: {
       "sk": "Vanuatu",
@@ -7523,6 +7760,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###-####',
     name: "Venezuela, Bolivarian Republic of Venezuela",
     nameTranslations: {
       "sk": "Venezuela",
@@ -7555,6 +7793,7 @@ const List<Country> countries = [
     maxLength: 10,
   ),
   Country(
+    mask: '###-####-####',
     name: "Vietnam",
     nameTranslations: {
       "sk": "Vietnam",
@@ -7587,6 +7826,7 @@ const List<Country> countries = [
     maxLength: 11,
   ),
   Country(
+    mask: '###-####',
     name: "Virgin Islands, British",
     nameTranslations: {
       "sk": "Britské Panenské ostrovy",
@@ -7619,6 +7859,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-####',
     name: "Virgin Islands, U.S.",
     nameTranslations: {
       "sk": "Americké Panenské ostrovy",
@@ -7651,6 +7892,7 @@ const List<Country> countries = [
     maxLength: 7,
   ),
   Country(
+    mask: '###-###',
     name: "Wallis and Futuna",
     nameTranslations: {
       "sk": "Wallis a Futuna",
@@ -7683,6 +7925,7 @@ const List<Country> countries = [
     maxLength: 6,
   ),
   Country(
+    mask: '###-###-###',
     name: "Yemen",
     nameTranslations: {
       "sk": "Jemen",
@@ -7715,6 +7958,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+    mask: '###-###-###',
     name: "Zambia",
     nameTranslations: {
       "sk": "Zambia",
@@ -7747,6 +7991,7 @@ const List<Country> countries = [
     maxLength: 9,
   ),
   Country(
+      mask: '###-###-###',
       name: "Zimbabwe",
       nameTranslations: {
         "sk": "Zimbabwe",
@@ -7788,8 +8033,10 @@ class Country {
   final String regionCode;
   final int minLength;
   final int maxLength;
+  final String mask;
 
   const Country({
+    required this.mask,
     required this.name,
     required this.flag,
     required this.code,
@@ -7799,26 +8046,6 @@ class Country {
     required this.maxLength,
     this.regionCode = "",
   });
-
-  String maskGenerator() {
-    // Common phone patterns; feel free to customize per-country by setting [mask].
-    switch (maxLength) {
-      case 10:
-        return "###-###-####";
-      case 9:
-        return "###-###-###";
-      case 8:
-        return "####-####";
-      case 7:
-        return "###-####";
-      case 6:
-        return "###-###";
-      case 5:
-        return "##-###";
-      default:
-        return List.filled(maxLength, "#").join();
-    }
-  }
 
   String get fullCountryCode {
     return dialCode + regionCode;

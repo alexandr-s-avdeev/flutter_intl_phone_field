@@ -18,6 +18,10 @@ class HomeScreen extends StatefulWidget {
 
 /// State for widget HomeScreen.
 class _HomeScreenState extends State<HomeScreen> {
+  late final TextEditingController controller = TextEditingController()
+    ..addListener(() {
+      print(controller.text);
+    });
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,23 +47,23 @@ class _HomeScreenState extends State<HomeScreen> {
               color: Colors.black,
               fontWeight: FontWeight.w400,
             ),
-            decoration: InputDecoration(
-              errorBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Color(0xffC4C4C4)),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Color(0xffC4C4C4)),
-              ),
-              contentPadding: EdgeInsets.zero,
-              constraints: BoxConstraints(maxHeight: 40),
-              border: OutlineInputBorder(
-                borderSide: BorderSide(color: Color(0xffC4C4C4)),
-              ),
-            ),
+            // decoration: InputDecoration(
+            //   errorBorder: OutlineInputBorder(
+            //     borderSide: BorderSide(color: Color(0xffC4C4C4)),
+            //   ),
+            //   focusedBorder: OutlineInputBorder(
+            //     borderSide: BorderSide(color: Color(0xffC4C4C4)),
+            //   ),
+            //   contentPadding: EdgeInsets.zero,
+            //   constraints: BoxConstraints(maxHeight: 40),
+            //   border: OutlineInputBorder(
+            //     borderSide: BorderSide(color: Color(0xffC4C4C4)),
+            //   ),
+            // ),
             languageCode: 'en',
             initialCountryCode: 'US',
             onChanged: (phone) {
-              print(phone.completeNumber);
+              controller.text = phone.completeNumber;
             },
           ),
         ),
