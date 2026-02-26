@@ -360,7 +360,8 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
   late List<Country> filteredCountries;
   late String number;
 
-  final TextEditingController _controller = TextEditingController();
+  late final TextEditingController _controller =
+      TextEditingController(text: widget.initialValue);
 
   String? validatorMessage;
 
@@ -534,13 +535,13 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
   Widget build(BuildContext context) {
     return TextFormField(
       key: widget.formFieldKey,
-      initialValue: widget.initialValue,
-      // initialValue: (widget.controller == null) ? number : null,
+      //   initialValue: (widget.controller == null) ? number : null,
       autofillHints: widget.autofillHints ??
           [
             AutofillHints.telephoneNumberNational,
             AutofillHints.telephoneNumber
           ],
+
       readOnly: widget.readOnly,
       obscureText: widget.obscureText,
       textAlign: widget.textAlign,
