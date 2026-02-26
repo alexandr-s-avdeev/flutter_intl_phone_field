@@ -534,6 +534,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
   Widget build(BuildContext context) {
     return TextFormField(
       key: widget.formFieldKey,
+      initialValue: widget.initialValue,
       // initialValue: (widget.controller == null) ? number : null,
       autofillHints: widget.autofillHints ??
           [
