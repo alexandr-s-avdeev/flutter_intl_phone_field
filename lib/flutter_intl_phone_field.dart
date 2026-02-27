@@ -290,9 +290,11 @@ class IntlPhoneField extends StatefulWidget {
 
   final String bottomSheetDialogSearchHintText;
 
+  final String? phoneNumber;
   const IntlPhoneField({
     Key? key,
     this.formFieldKey,
+    this.phoneNumber,
     this.initialCountryCode,
     this.languageCode = 'en',
     this.autofillHints,
@@ -361,7 +363,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
   late String number;
 
   late final TextEditingController _controller =
-      TextEditingController(text: widget.initialValue);
+      TextEditingController(text: widget.phoneNumber);
 
   String? validatorMessage;
 
